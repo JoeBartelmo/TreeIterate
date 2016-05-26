@@ -47,9 +47,9 @@ function TreeIterator(tree, iteratorCallback){
         if(val.child.children && keepGoing) {
 
             var newChildren = [];
+            val.parents.unshift(val.child);
             val.child.children.forEach(function convert(child){
                 //val.parents.push(val.parent);
-                val.parents.unshift(val.child);
 
                 newChildren.push({
                     parent : val.child,

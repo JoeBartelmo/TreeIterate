@@ -24,9 +24,10 @@ describe('Test Tree Iterate', function () {
                                     ]
                                 }
                             ]
-                        }
+                        },{}
                     ]
-                }
+                },
+                {},{},{}
             ]
         }
     ];
